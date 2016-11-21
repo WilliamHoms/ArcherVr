@@ -1,0 +1,191 @@
+fileFormatVersion: 2
+guid: 7df12d5961984b74c9c343f0c86eaf75
+timeCreated: 1479423627
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Bone_BowBot1
+    100002: Bone_BowBot2
+    100004: Bone_BowBot3
+    100006: Bone_BowBot4
+    100008: Bone_BowTop1
+    100010: Bone_BowTop2
+    100012: Bone_BowTop3
+    100014: Bone_BowTop4
+    100016: Bone_CordBot
+    100018: Bone_CordTop
+    100020: Box001
+    100022: Line002
+    100024: //RootNode
+    100026: NodBot
+    100028: NodCordBot
+    100030: NodCordTop
+    100032: NodTop
+    100034: Point006
+    100036: PT_CordeBot
+    100038: PT_CordeMilieu
+    100040: PT_CordeTop
+    400000: Bone_BowBot1
+    400002: Bone_BowBot2
+    400004: Bone_BowBot3
+    400006: Bone_BowBot4
+    400008: Bone_BowTop1
+    400010: Bone_BowTop2
+    400012: Bone_BowTop3
+    400014: Bone_BowTop4
+    400016: Bone_CordBot
+    400018: Bone_CordTop
+    400020: Box001
+    400022: Line002
+    400024: //RootNode
+    400026: NodBot
+    400028: NodCordBot
+    400030: NodCordTop
+    400032: NodTop
+    400034: Point006
+    400036: PT_CordeBot
+    400038: PT_CordeMilieu
+    400040: PT_CordeTop
+    4300000: Box001
+    4300002: Line002
+    7400000: Bow_Bend
+    7400002: Bow_Bend2
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Box001
+    13700002: Line002
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Bow_Bend
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 75
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bone_CordBot
+        weight: 1
+      - path: Bone_CordBot/NodCordBot
+        weight: 1
+      - path: Bone_CordTop
+        weight: 1
+      - path: Bone_CordTop/NodCordTop
+        weight: 1
+      - path: Box001
+        weight: 1
+      - path: Line002
+        weight: 1
+      - path: Point006
+        weight: 1
+      - path: Point006/Bone_BowBot1
+        weight: 1
+      - path: Point006/Bone_BowBot1/Bone_BowBot2
+        weight: 1
+      - path: Point006/Bone_BowBot1/Bone_BowBot2/Bone_BowBot3
+        weight: 1
+      - path: Point006/Bone_BowBot1/Bone_BowBot2/Bone_BowBot3/Bone_BowBot4
+        weight: 1
+      - path: Point006/Bone_BowBot1/Bone_BowBot2/Bone_BowBot3/Bone_BowBot4/NodBot
+        weight: 1
+      - path: Point006/Bone_BowTop1
+        weight: 1
+      - path: Point006/Bone_BowTop1/Bone_BowTop2
+        weight: 1
+      - path: Point006/Bone_BowTop1/Bone_BowTop2/Bone_BowTop3
+        weight: 1
+      - path: Point006/Bone_BowTop1/Bone_BowTop2/Bone_BowTop3/Bone_BowTop4
+        weight: 1
+      - path: Point006/Bone_BowTop1/Bone_BowTop2/Bone_BowTop3/Bone_BowTop4/NodTop
+        weight: 1
+      - path: Point006/PT_CordeMilieu
+        weight: 1
+      - path: PT_CordeBot
+        weight: 1
+      - path: PT_CordeTop
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.012
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
