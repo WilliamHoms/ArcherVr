@@ -14,7 +14,7 @@ public class Enemy : MonoBehaviour {
 
 	public int moneyValue = 1;
 
-	// Use this for initialization
+
 	void Start () {
 		pathGo = GameObject.Find ("Path");
 	
@@ -33,8 +33,9 @@ public class Enemy : MonoBehaviour {
         }
 	}
 	
-	// Update is called once per frame
+
 	void Update () {
+
 		if (targetPathNode == null) {
 			GetNextPathNode ();
 			if (targetPathNode == null) {
