@@ -12,6 +12,7 @@ TagManager:
   - SpotTower
   - TeleportIgnore
   - ExcludeTeleport
+  - FirstPath
   layers:
   - Default
   - TransparentFX
