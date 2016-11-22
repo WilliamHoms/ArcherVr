@@ -40,8 +40,6 @@ GameObject:
   - 114: {fileID: 114000013075145906}
   - 65: {fileID: 65000013633671442}
   - 54: {fileID: 54000010272273948}
-  - 195: {fileID: 195000013380947136}
-  - 114: {fileID: 114000010811789490}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -219,26 +217,13 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.9548147, y: 2.91, z: 1.0370808}
   m_Center: {x: -0.05430603, y: 0.47000003, z: 0.0744257}
---- !u!114 &114000010811789490
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011378526640}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7195af02019bfb94c8541940d6fe2be0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: []
-  allChildren: []
 --- !u!114 &114000013075145906
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011378526640}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f82317f1f5ed38e4a8d971dbbd654363, type: 3}
   m_Name: 
@@ -258,23 +243,3 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!195 &195000013380947136
-NavMeshAgent:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011378526640}
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 2
-  m_BaseOffset: 0
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4

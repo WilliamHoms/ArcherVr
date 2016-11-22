@@ -12,6 +12,9 @@ TagManager:
   - SpotTower
   - TeleportIgnore
   - ExcludeTeleport
+  - SpawnTour
+  - Trashcan
+  - Arrow
   layers:
   - Default
   - TransparentFX
