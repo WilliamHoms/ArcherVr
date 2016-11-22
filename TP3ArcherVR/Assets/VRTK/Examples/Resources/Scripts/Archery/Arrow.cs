@@ -29,6 +29,8 @@
 
         public void Fired()
         {
+            //Activer le trail renderer
+            gameObject.GetComponent<TrailRenderer>().enabled = true;
             DestroyArrow(maxArrowLife);
         }
 
@@ -42,6 +44,9 @@
 
         private void Start()
         {
+            //désactiver le trail renderer
+            gameObject.GetComponent<TrailRenderer>().enabled = false;
+
             rigidBody = GetComponent<Rigidbody>();
             SetOrigns();
         }
