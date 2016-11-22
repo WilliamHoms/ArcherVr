@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class GrabTower : MonoBehaviour {
+
     private VRTK.VRTK_InteractableObject scriptInteractable;
     private Tower towerscript;
 
@@ -14,21 +15,25 @@ public class GrabTower : MonoBehaviour {
     private float minimumDistanceScale = 0.1f;
     private float maximumDistanceScale = 0.01f;
 
+    bool inTrash = false;
 
-	// Use this for initialization
 	void Start () {
         scriptInteractable = GetComponent<VRTK.VRTK_InteractableObject>();
         towerscript = GetComponent<Tower>();
         pointDeRefScale = GameObject.Find("PointDeRefScale");
+        scriptInteractable.isDroppable = false;
 
 
 
 	}
 	
-	// Update is called once per frame
-	void Update () {
-        if (scriptInteractable.IsGrabbed()) {
 
+	void Update () {
+        Debug.Log(scriptInteractable.isDroppable);
+
+        //On check si la tour est grabbée
+        if (scriptInteractable.IsGrabbed()) {
+            //on la scale avec la distance de l'objet pointdeRefScale
             float distance = (transform.position - pointDeRefScale.transform.position).magnitude;
             float norm = (distance - minimumDistance) / (maximumDistance - minimumDistance);
             norm = Mathf.Clamp01(norm);
@@ -41,19 +46,66 @@ public class GrabTower : MonoBehaviour {
 
            
         }
-	
-	}
 
-    void OnTriggerStay(Collider col) {
+        if (scriptInteractable.IsGrabbed() == false && inTrash)
+        {
+            Destroy(gameObject);
+        }
+
+    }
+
+
+    void OnTriggerEnter (Collider col)
+    {
         if (col.gameObject.CompareTag("SpotTower"))
         {
+            Debug.Log("Colliding with SpotTower");
+            Droppable(true);
+            //activer la tour
+            //towerscript.awake = true;
 
+
+        }
+
+        if (col.gameObject.CompareTag("Trashcan"))
+        {
+            Droppable(true);
+
+            inTrash = true;
+        }
+    }
+
+    void OnTriggerExit (Collider col)
+    {
+        if (col.gameObject.CompareTag("SpotTower"))
+        {
+            Droppable(false);
+            //désactiver la tour
+            //towerscript.awake = false;
+
+
+        }
+        if (col.gameObject.CompareTag("Trashcan"))
+        {
+            Droppable(false);
+            inTrash = false;
+        }
+
+    }
+
+    void Droppable(bool drop) {
+        if (drop)
+        {
             scriptInteractable.isDroppable = true;
-            towerscript.awake = true;
+
+
+
         }
         else {
             scriptInteractable.isDroppable = false;
-            towerscript.awake = false;
+
+
+
         }
     }
 }
